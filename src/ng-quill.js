@@ -300,6 +300,8 @@
         if (this.onEditorCreated) {
           this.onEditorCreated({editor: editor})
         }
+
+        $scope.$emit('ngQuill:created', editor);
       }
     }]
   })
